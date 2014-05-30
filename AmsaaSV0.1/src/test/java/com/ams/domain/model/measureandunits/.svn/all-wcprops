@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/test/java/com/ams/domain/model/measureandunits
+END
+QuantityTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/test/java/com/ams/domain/model/measureandunits/QuantityTest.java
+END
+PeriodTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/test/java/com/ams/domain/model/measureandunits/PeriodTest.java
+END
+MoneyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/test/java/com/ams/domain/model/measureandunits/MoneyTest.java
+END
+RateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/test/java/com/ams/domain/model/measureandunits/RateTest.java
+END

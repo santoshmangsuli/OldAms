@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/main/java/com/ams/domain/model/person
+END
+Authorisation.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/main/java/com/ams/domain/model/person/Authorisation.java
+END
+PersonRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/main/java/com/ams/domain/model/person/PersonRole.java
+END
+PersonDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/main/java/com/ams/domain/model/person/PersonDetail.java
+END
+Person.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/main/java/com/ams/domain/model/person/Person.java
+END
+Address.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/main/java/com/ams/domain/model/person/Address.java
+END

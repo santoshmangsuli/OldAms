@@ -1,0 +1,9 @@
+package com.ams.domain.repository;
+
+import com.ams.domain.model.service.Service;
+import com.ams.domain.repository.common.Repository;
+
+public interface ServiceRepository extends Repository<Service, String>
+{
+
+}

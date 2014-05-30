@@ -1,0 +1,19 @@
+/* 
+ * Document   : JS
+ * Author     : Raghavendra I Badiger
+ * Description: 
+ *  
+ */
+
+define(function(require) {
+	"use strict";
+	return {
+		"#home"				: require("./modules/homemanager/controller/homecontroller"),
+		"#usermanager"		: require("./modules/usermanager/controller/usercontroller"),
+		"#servicemanager"	: require("./modules/servicemanager/controller/servicecontroller"),
+		"#financemanager"	: require("./modules/financemanager/controller/financecontroller"),
+		"#billmanager"		: require("./modules/billmanager/controller/billcontroller"),
+		"#calendermanager"	: require("./modules/calendarmanager/controller/calendarcontroller"),
+		"tableGridStyle"	: "/lib/jquery/jquery-grid/css/ui.jqgrid.css"
+	};
+});

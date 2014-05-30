@@ -1,0 +1,193 @@
+/* 
+    Document   : Application Style
+    Created on : Nov 28, 2012, 1:55:53 PM
+    Author     : Raghavendra Badiger
+    Description: Stylesheet to provide custom UI styles
+*/
+
+body {
+	font: 70% "Trebuchet MS", sans-serif;
+	display: block; 
+	background-color: white; 
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
+
+#header {
+	min-height: 130px;
+	border-style: solid;
+	border-bottom: none;
+	border-width: 1px;
+	border-color: #C5C9C5; 
+	background-color: #f1a020;
+	margin-top: -9px; 
+}
+
+#content {
+	min-height: 220px;
+	height: auto;
+	overflow: auto;
+	border-style: none;
+	border-width: 1px;
+	border-color: #C5C9C5;
+}
+
+#footer {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C5C9C5; 
+	background-color: black;
+	display: block;
+	margin-top: 2px;
+	margin-bottom: -12px;
+	min-height: 30px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.customTabs {
+	padding: 0px;
+	border: none;
+
+}
+
+.customTabs>.ui-tabs-nav {
+	border-radius: 0px;
+	border-bottom-color: black;
+}
+
+.customTabs>.ui-tabs-nav li {
+	left: 15px;
+	border-radius: 0px;
+	
+}
+
+
+.customTabs>.ui-tabs-active {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	
+}
+
+.customTabs>.ui-tabs-panel {
+	display: block;
+	min-height: 360px;
+	height: auto;
+	overflow: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+	border-style: solid;
+	border-top: none;
+	border-width: 1px;
+	border-color: #C5C9C5;
+	border-radius: 0px;
+	padding: 1em 1.4em;
+}
+
+.nestedTabs {
+	border: none;
+	top: -5px; //
+	overflow: auto;
+}
+
+.nestedTabs>.ui-tabs-nav {
+	background: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-color: black;
+	margin-left: -20px;
+	margin-right: -20px;
+	padding-top: 1px;
+}
+
+.nestedTabs>.ui-tabs-nav li {
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	left: 25px;
+}
+
+.nestedTabs>.ui-tabs-panel {
+	margin-left: 3px;
+	min-height: 358px;
+	height: auto;
+	border-style: none;
+	border-top: none;
+	border-width: 1px;
+	border-color: black;
+}
+
+.nestedTabs>.ui-tabs-nav li a {
+	padding: 5px 5px;
+	font: 85% "Trebuchet MS", sans-serif;
+}
+
+.formTabs>.ui-tabs-nav {
+	padding: 0px 0px;
+}
+
+.formTabs>.ui-tabs-nav li a {
+	padding: 5px 5px;
+}
+
+.uiTable {
+	backface-visibility: visible;
+	background-color: transparent;
+	opacity: 30%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	text-align: center;
+	border-radius: 3px;
+	border-collapse: collapse;
+}
+
+.uiTable thead tr {
+	background: #0F910F; /* Old browsers */
+	color: white;
+}
+
+.coloredRow {
+	background: #7AA300; /* Old browsers */
+	color: white;
+}
+
+.uiTable-with-border tbody td {
+	border: 1px solid #C5C9C5;
+	text-align: centre;
+}
+
+.uiTable-with-border thead th {
+	border: 1px solid #C5C9C5;
+	text-align: center;
+}
+
+.uiTable th {
+	padding: 5px;
+}
+
+.uiTable td {
+	text-align: center;
+	padding: 3px;
+}
+
+.button .ui-button {
+	padding: 3px 3px 3px 3px;
+}
+
+input{
+     width: 100%;
+     border:0;
+     background-color: #fff;
+     background: transparent; 
+     box-sizing: border-box;
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing: border-box;
+}
+

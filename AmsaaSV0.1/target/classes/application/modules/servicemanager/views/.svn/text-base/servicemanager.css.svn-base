@@ -1,0 +1,29 @@
+/* 
+ *   Document   : Application Style
+ *   Author     : Raghavendra Badiger
+ *   Description: Stylesheet to provide custom UI styles for SERVICE-MANAGER page
+ */
+
+
+#srvcMgrTable {
+	width: 80%;
+	margin-left: 5%;
+	margin-top: 5%;
+	
+}
+
+#srvcMgrTable th { 
+	background-color:black; 
+	color: white;
+	
+}
+
+#records {
+	width: 50px;
+	margin: 10px 100px 10px 5px;
+}
+
+input {
+	width: 100%;
+	border: 0;
+}

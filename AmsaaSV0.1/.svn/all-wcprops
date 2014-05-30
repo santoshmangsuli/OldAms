@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/sandbox/!svn/ver/1/AmsaaS/trunk/AmsaaS
+END
+.buildpath
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/.buildpath
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/pom.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/.project
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/.classpath
+END

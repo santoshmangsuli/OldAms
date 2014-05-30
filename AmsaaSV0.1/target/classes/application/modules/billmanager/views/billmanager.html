@@ -1,0 +1,252 @@
+<form method="post" id="billCreateForm">
+	<div id="billCreateAccordian" class="accordian">
+		<div class="accordion-group">
+			<div class="accordion-heading">
+				<a class="accordion-toggle" data-toggle="collapse"
+					data-parent="#billCreateAccordian" href="#billHeader" style="background-color: #BEF781; color: black;"> BILL
+					HEADER</a>
+			</div>
+			<div id="billHeader" class="accordion-body collapse in">
+				<div class="accordion-inner">
+					<table id="billDetailTable">
+						<tbody>
+							<tr>
+								<td>Bill
+									Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+								<td><input id="billDate" type="text"
+									data-bind="datepicker:Bill().billDate" />
+								</td>
+								<td>Bill Due Date&nbsp;&nbsp;:</td>
+								<td><input id="billDueDate" type="text"
+									data-bind="datepicker:Bill().billDueDate" />
+								</td>
+							</tr>
+							<tr>
+								<td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td></td><td></td><td></td><td></td>
+							</tr>
+							<tr class="coloredRow">
+								<th colspan="4">Bill Period</th>
+							</tr>
+							<tr>
+								<td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>From Date&nbsp;&nbsp;:</td>
+								<td><input id="billFromDate" type="text"
+									data-bind="datepicker:Bill().billPeriodFromDate" />
+								</td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;To Date&nbsp;&nbsp;:</td>
+								<td><input id="billToDate" type="text"
+									data-bind="datepicker:Bill().billPeriodToDate" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-group">
+			<div class="accordion-heading">
+				<a class="accordion-toggle" data-toggle="collapse"
+					data-parent="#billCreateAccordian" href="#custDetails" style="background-color: #BEF781; color: black;">
+					CUSTOMER DETAILS</a>
+			</div>
+			<div id="custDetails" class="accordion-body collapse">
+				<div class="accordion-inner">				
+				<table  class="uiTable uiTable-with-border" width="90%" data-bind="with:Bill().billCustomer">
+					<thead>
+						<tr>
+							<th colspan="5">CUSTOMER DETAILS</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Flat #&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+							<td><input id="customersFlatNo"
+								data-bind="value:chosenFlatNumber,valueUpdate:'afterkeydown'" />
+							</td>
+							<td colspan="2">
+								<button id="searchFlatNumber"
+									data-bind="click:getCustomerFromList" class="button">Search!!</button>
+							</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<td>First Name&nbsp;:</td>
+							<td data-bind="text:persnFirstName"></td>
+							<td>Last Name&nbsp;:</td>
+							<td data-bind="text:persnLastName"></td>
+						</tr>
+						<tr>
+							<td>Phone #&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+							<td data-bind="text:landLineNumber"></td>
+							<td>Mobile #&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+							<td data-bind="text:mobileNumber"></td>
+						</tr>
+						<tr>
+							<td>Email Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+							<td data-bind="text:emailId"></td>
+							<td>Etc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="accordion-group">
+		<div class="accordion-heading" style="background-color: #BEF781; color: black;">
+			<a class="accordion-toggle" data-toggle="collapse"
+				data-parent="#billCreateAccordian" href="#billItems" > BILL-ITEMS</a>
+		</div>
+		<div id="billItems" class="accordion-body collapse">
+			<div class="accordion-inner">
+				
+				<table class="uiTable uiTable-with-border" width="90%"
+					data-bind="with:Bill()">
+					<tr>
+						<td><select
+							data-bind="options:$root.Bill().servicePlanList,optionsText: 'srvcPlanName',optionsCaption:'Select...',value: servicePlanView"></select>
+						</td>
+					</tr>
+				</table>
+				<table class="uiTable uiTable-with-border" width="90%">
+					<thead>
+						<tr>
+							<th>Sl#</th>
+							<th>Service Code</th>
+							<th>Service Name</th>
+							<th>Price</th>
+							<th>Quantity</th>
+							<th>Subtotal</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody data-bind='foreach:Bill().billLineItems'>
+						<tr>
+							<td data-bind="text:$index()+1"></td>
+							<td>
+								<div data-bind="if:$root.Bill().servicePlanView">
+									<select
+										data-bind="options:$root.Bill().servicePlanView().srvcRateLst,optionsText:function(item){return item.srvcCode},optionsCaption:'Select...',value:itemProduct"></select>
+								</div></td>
+							<td data-bind='with: itemProduct'><span
+								data-bind='text:srvcName'></span></td>
+							<td data-bind='with: itemProduct'><span
+								data-bind='text:price'></span>
+							</td>
+							<td><input style="width: 50px;"
+								data-bind='visible: itemProduct, value: quantity, valueUpdate: "afterkeydown"' />
+							</td>
+							<td data-bind="text:subTotal"></td>
+							<td>
+								<button data-bind='click:$root.Bill().removeBillItem'>Remove
+									Item</button></td>
+						</tr>
+					</tbody>
+					<tbody class="uiTable-with-border">
+						<tr style="background-color: #C5C9C5; color: black;">
+							<td colspan="5" style="text-align: right;"><strong>TOTAL
+									TAX:</strong>
+							</td>
+							<td data-bind="text:Bill().billTotalTax"></td>
+							<td></td>
+						</tr>
+						<tr style="background-color: #E8EBE8; color: black;">
+							<td colspan="5" style="text-align: right;"><strong>TOTAL
+									AMOUNT:</strong>
+							</td>
+							<td data-bind="text:Bill().billTotalAmount"></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+				<button data-bind='click:Bill().addBillItem'>Add Item</button>
+			</div>
+		</div>
+	</div>
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-toggle="collapse"
+				data-parent="#billCreateAccordian" href="#billSummary" style="background-color: #BEF781; color: black;">BILL
+				SUMMARY</a>
+		</div>
+		<div id="billSummary" class="accordion-body collapse">
+			<div class="accordion-inner">
+				<table class="uiTable uiTable-with-border" width="90%"
+					data-bind="with:Bill()">
+					
+					<tr>
+						<td>Bill Date </td><td data-bind="text:billDate"></td><td>Bill Due Date </td><td data-bind="text:billDueDate"></td>
+					</tr>
+					<tr>
+						<td>Bill Period From Date </td><td data-bind="text:billPeriodFromDate"></td>
+						<td>Bill Period To Date </td><td data-bind="text:billPeriodToDate"></td>
+					</tr>
+					
+					<tr data-bind="with:billCustomer">
+							<td>First Name&nbsp;:</td>
+							<td data-bind="text:persnFirstName"></td>
+							<td>Last Name&nbsp;:</td>
+							<td data-bind="text:persnLastName"></td>
+					</tr>					
+				</table>
+				<div data-bind="if:$root.Bill().servicePlanView">
+				<table class="uiTable uiTable-with-border" width="90%">
+					<thead>
+						<tr>
+							<th>Sl#</th>
+							<th>Service Code</th>
+							<th>Service Name</th>
+							<th>Price</th>
+							<th>Quantity</th>
+							<th>Subtotal</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody data-bind='foreach:Bill().billLineItems'>
+						<tr>
+							<td data-bind="text:$index()+1"></td>
+							<td data-bind='with: itemProduct'><span
+								data-bind='text:srvcCode'></span></td>
+							<td data-bind='with: itemProduct'><span
+								data-bind='text:srvcName'></span></td>
+							<td data-bind='with: itemProduct'><span
+								data-bind='text:price'></span>
+							</td>
+							<td><span
+								data-bind='text:quantity'></span>
+							</td>
+							<td data-bind="text:subTotal"></td>							
+						</tr>
+					</tbody>
+					<tbody class="uiTable-with-border">
+						<tr style="background-color: #C5C9C5; color: black;">
+							<td colspan="5" style="text-align: right;"><strong>TOTAL
+									TAX:</strong>
+							</td>
+							<td data-bind="text:Bill().billTotalTax"></td>
+							<td></td>
+						</tr>
+						<tr style="background-color: #E8EBE8; color: black;">
+							<td colspan="5" style="text-align: right;"><strong>TOTAL
+									AMOUNT:</strong>
+							</td>
+							<td data-bind="text:Bill().billTotalAmount"></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button data-bind='click: Bill().submitBill'>Submit Bill</button>
+	<button data-bind='click: Bill().resetBill'>Reset</button>	
+</form>

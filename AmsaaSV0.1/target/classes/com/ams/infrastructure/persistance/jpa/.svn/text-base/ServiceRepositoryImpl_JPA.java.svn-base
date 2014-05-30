@@ -1,0 +1,57 @@
+package com.ams.infrastructure.persistance.jpa;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.PersistenceContextType;
+import javax.persistence.TypedQuery;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.ams.domain.model.service.Service;
+import com.ams.domain.repository.ServiceRepository;
+
+@Repository("ServiceRepository")
+public class ServiceRepositoryImpl_JPA implements ServiceRepository
+{
+
+	@Autowired
+	@PersistenceContext(type = PersistenceContextType.EXTENDED)
+	private EntityManager	entityManager;
+
+	public String createOrUpdate(Service srvc)
+	{
+		if (srvc.getSrvcCode() == null)
+		{
+			entityManager.persist(srvc);
+		}
+		else
+		{
+			entityManager.merge(srvc);
+		}
+
+		return srvc.getSrvcCode();
+
+	}
+
+	public void delete(String svcCode)
+	{
+		Service svc = entityManager.find(Service.class, svcCode);
+		entityManager.remove(svc);
+
+	}
+
+	public Service findById(String svcCode)
+	{
+		return entityManager.find(Service.class, svcCode);
+	}
+
+	public List<Service> findAll()
+	{
+		TypedQuery<Service> query = entityManager.createQuery("select S from Service S", Service.class);
+		return query.getResultList();
+	}
+
+}

@@ -1,0 +1,87 @@
+<div id="servicesContainer" class="nestedTabs">
+	<ul>
+		<li><a href="#ServicePlanManagerDiv">SERVICE-PLAN
+				MANAGER</a></li>
+		<li><a href="#ServiceManagerDiv">SERVICES MANAGER</a></li>
+	</ul>
+	<div id="ServicePlanManagerDiv"></div>
+	<div id="ServiceManagerDiv">
+		<table id="srvcMgrTable" class="uiTable uiTable-with-border">
+			<thead>
+				<tr>
+					<th>Sl#</th>
+					<th>SERVICE CODE</th>
+					<th>SERVICE NAME</th>
+					<th>SERVICE DESCRIPTION</th>
+					<th colspan="3">ACTION</th>
+				</tr>
+			</thead>
+			<tbody data-bind="foreach:srvcPagedGridView().pagedRecordList">
+				<tr>
+					<td data-bind="text:$index()+1"></td>
+					<td><input
+						data-bind='value:dataModel.srvcCode,hasFocus:viewModel.isSelected,enable:viewModel.isIdEditable'></input></td>
+					<td><input
+						data-bind='value:dataModel.srvcName,enable:viewModel.isEditable' /></td>
+					<td><input
+						data-bind='value:dataModel.srvcDescription,enable:viewModel.isEditable' /></td>
+					<td><button id="edit" data-bind="click:viewModel.isEditable"
+							title="Edit" class="ui-state-default ui-corner-all">
+							<span class="ui-icon ui-icon-folder-open"
+								data-bind="visible:viewModel.isEditable"></span> <span
+								class="ui-icon ui-icon-folder-collapsed"
+								data-bind="visible:!viewModel.isEditable()"></span>
+						</button></td>
+					<td><button id="save" data-bind="click:$parent.saveService"
+							title="Save changes!" class="ui-state-default ui-corner-all">
+							<span class="ui-icon ui-icon-disk"></span>
+						</button></td>
+					<td><button id="delete"
+							data-bind="click:$parent.deleteService" title="Delete"
+							class="ui-state-default ui-corner-all">
+							<span class="ui-icon ui-icon-trash"></span>
+						</button></td>
+				</tr>
+
+			</tbody>
+			<tbody>
+				<tr>
+					<td colspan="7">
+						<button data-bind="click:addNewService" title="Add new Service"
+							class="ui-state-default ui-corner-all">
+							<span class="ui-icon ui-icon-plusthick"></span>
+						</button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="7">
+					Records/Page:<select id="records"
+						data-bind="options:srvcPagedGridView().pageRecordOption,value:srvcPagedGridView().chosenPageRecord"></select>
+						<button id="firstPage"
+							data-bind="click:srvcPagedGridView().moveToFirstPage"
+							title="Go to first page" class="ui-state-default ui-corner-all">
+							<span class="ui-icon ui-icon-seek-start"></span>
+						</button>
+						<button id="prevPage"
+							data-bind="click:srvcPagedGridView().moveToPrevPage"
+							title="Go to prev page" class="ui-state-default ui-corner-all">
+							<span class="ui-icon ui-icon-triangle-1-w"></span>
+						</button> Page:<span data-bind="text:srvcPagedGridView().currentPageNo"></span>
+						/<span data-bind="text:srvcPagedGridView().noOfPages"></span>
+						<button id="nextPage"
+							data-bind="click:srvcPagedGridView().moveToNextPage"
+							title="Go to next page" class="ui-state-default ui-corner-all">
+							<span class="ui-icon ui-icon-triangle-1-e"></span>
+						</button>
+						<button id="lastPage"
+							data-bind="click:srvcPagedGridView().moveToLastPage"
+							title="Go to last page" class="ui-state-default ui-corner-all">
+							<span class="ui-icon ui-icon-seek-end"></span>
+						</button> 
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+	</div>
+</div>

@@ -1,0 +1,281 @@
+
+<div id="billNPaymentManagerTabs" class="tabbable">
+	<ul class="nav nav-tabs">
+		<li><a href="#billDashBoardDiv">BILLS DASHBOARD</a></li>
+		<li class="active"><a href="#billCreateDiv">CREATE BILL </a></li>
+		<li><a href="#billPaymentsDiv">PAYMENTS DASHBOARD</a></li>
+	</ul>
+	<div class="tab-content">
+		<div id="billDashBoardDiv"></div>
+		<div id="billPaymentsDiv"></div>
+
+		<div id="billCreateDiv" class="tab-pane active">
+			<form method="post" id="billCreateForm">
+				<div id="billCreateAccordian">
+					<h6>HEADER</h6>
+					<div>
+						<table id="billDetailTable">
+							<tbody>
+								<tr>
+									<td>Bill
+										Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+									<td><input id="billDate" type="text"
+										data-bind="datepicker:BillModelView.billDate" />
+									</td>
+									<td>Bill Due Date&nbsp;&nbsp;:</td>
+									<td><input id="billDueDate" type="text"
+										data-bind="datepicker:BillModelView.billDueDate" />
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr class="coloredRow">
+									<th colspan="4">Bill Period</th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>From Date&nbsp;&nbsp;:</td>
+									<td><input id="billFromDate" type="text"
+										data-bind="datepicker:BillModelView.billPeriodFromDate" />
+									</td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;To Date&nbsp;&nbsp;:</td>
+									<td><input id="billToDate" type="text"
+										data-bind="datepicker:BillModelView.billPeriodToDate" />
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h6>CUSTOMER DETAILS</h6>
+					<div>
+						<table id="billCustomerDetTable"
+							data-bind="with:BillModelView.billCustomer">
+							<tbody>
+								<tr>
+									<td>Flat #&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+									<td><input id="customersFlatNo"
+										data-bind="value:chosenFlatNumber,valueUpdate:'afterkeydown'" />
+									</td>
+									<td colspan="2">
+										<button id="searchFlatNumber"
+											data-bind="click:$parent.getCustomerFromList" class="button">Search!!</button>
+									</td>
+								</tr>
+								<tr>
+									<td style="width: 100%" colspan="4"><hr>
+									</td>
+								</tr>
+							</tbody>
+							<tbody data-bind="with:customer">
+								<tr>
+									<td>First Name:</td>
+									<td data-bind="text:persnFirstName"></td>
+									<td>Last Name&nbsp;:</td>
+									<td data-bind="text:persnLastName"></td>
+								</tr>
+								<tr>
+									<td>Phone #&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+									<td data-bind="text:persnDetail.landLineNumber"></td>
+									<td>Mobile #&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+									<td data-bind="text:persnDetail.mobileNumber"></td>
+								</tr>
+								<tr>
+									<td>Email Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+									<td data-bind="text:persnDetail.emailId"></td>
+									<td>Etc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h3>BILL ITEMS</h3>
+					<div>
+						<table class="uiTable uiTable-with-border" width="90%">
+							<thead>
+								<tr>
+									<th>Sl#</th>
+									<th>Service Code</th>
+									<th>Service Name</th>
+									<th>Price</th>
+									<th>Quantity</th>
+									<th>Subtotal</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody data-bind='foreach:$root.BillModelView.billLineItems'>
+								<tr>
+									<td data-bind="text: $index()+1"></td>
+									<td><button data-bind='click:$parent.removeBillItem'>RemoveTest
+											Item</button></td></td>
+									<td><select style="width: 100%;"
+										data-bind='options:$parent.prodList,optionsText:"srvcCode",optionsCaption:"Select...",value:itemProduct'>
+									</select>
+									</td>
+									<td data-bind='with: itemProduct'><span
+										data-bind='text: srvcName'></span>
+									</td>
+									<td data-bind='with: itemProduct'><span
+										data-bind='text: srvcPrice'></span>
+									</td>
+									<td><input style="width: 50px;"
+										data-bind='visible: itemProduct, value: quantity, valueUpdate: "afterkeydown"' />
+									</td>
+									<td data-bind="text:subTotal"></td>
+									<td>
+										<button data-bind='click:$parent.removeBillItem'>Remove
+											Item</button></td>
+								</tr>
+							</tbody>
+							<tbody class="uiTable-with-border">
+								<tr style="background-color: #C5C9C5; color: black;">
+									<td colspan="5" style="text-align: right;"><strong>TOTAL
+											TAX:</strong>
+									</td>
+									<td data-bind="text:BillModelView.billTotalTax"></td>
+									<td></td>
+								</tr>
+								<tr style="background-color: #E8EBE8; color: black;">
+									<td colspan="5" style="text-align: right;"><strong>TOTAL
+											AMOUNT:</strong>
+									</td>
+									<td data-bind="text:BillModelView.billTotalAmount"></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<button data-bind='click:BillModelView.addBillItem'>Add
+							Item</button>
+					</div>
+					<h3>BILL SUMMARY</h3>
+					<div>
+						<h3>
+							<B><u>CUSTOMER DETAILS</u>
+							</B>
+						</h3>
+						<table class="uiTable uiTable-with-border"
+							data-bind="with:BillModelView.billCustomer">
+							<thead>
+								<tr>
+									<th>Flat #</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Mobile #</th>
+									<th>Email Id</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-bind="text:$parent.chosenFlatNumber"></td>
+									<td>
+										<!-- data-bind="text:BillModelView.billCustomer.persnFirstName"-->
+									</td>
+									<td>
+										<!-- data-bind="text:BillModelView.billCustomer.persnLastName"-->
+									</td>
+									<td>
+										<!-- data-bind="text:BillModelView.billCustomer.mobileNumber"-->
+									</td>
+									<td>
+										<!-- data-bind="text:BillModelView.billCustomer.emailId"-->
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<h3>
+							<B><u>BILL DETAILS</u>
+							</B>
+						</h3>
+						<table class="uiTable uiTable-with-border">
+							<thead>
+								<tr>
+									<th rowspan="2">BILL DATE</th>
+									<th rowspan="2">BILL DUE DATE</th>
+									<th colspan="2">BILL PERIOD</th>
+								</tr>
+								<tr>
+									<th>From</th>
+									<th>To</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-bind="text:BillModelView.billDate"></td>
+									<td data-bind="text:BillModelView.billDueDate"></td>
+									<td data-bind="text:BillModelView.billPeriodFromDate"></td>
+									<td data-bind="text:BillModelView.billPeriodToDate"></td>
+								</tr>
+							</tbody>
+						</table>
+
+
+						<h3>
+							<B><u>BILLED ITEMS</u>
+							</B>
+						</h3>
+						<table class="uiTable uiTable-with-border">
+							<thead>
+								<tr>
+									<th>SL#</th>
+									<th>SERVICE CODE</th>
+									<th>SERVICE DESCRIPTION</th>
+									<th>SERVICE PRICE</th>
+									<th>QTY</th>
+									<th>SUBTOTAL</th>
+								</tr>
+							</thead>
+							<tbody data-bind="foreach:BillModelView.billLineItems">
+								<tr>
+									<td data-bind="text: $index()+1"></td>
+									<td data-bind='with: itemProduct'><span
+										data-bind='text: srvcCode'></span>
+									</td>
+									<td data-bind='with: itemProduct'><span
+										data-bind='text: srvcDescription'></span>
+									</td>
+									<td data-bind='with: itemProduct'><span
+										data-bind='text: srvcPrice'></span>
+									</td>
+									<td data-bind="text: quantity"></td>
+									<td data-bind="text: subTotal"></td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td colspan="5">TOTAL TAX</td>
+									<td data-bind="text:BillModelView.billTotalTax"></td>
+								</tr>
+								<tr>
+									<td colspan="5">TOTAL AMOUNT</td>
+									<td data-bind="text:BillModelView.billTotalAmount"></td>
+								</tr>
+							</tbody>
+
+						</table>
+					</div>
+				</div>
+				<br>
+				<button data-bind='click:BillModelView.submitBill'
+					style="left: 310px;">Submit Bill</button>
+				<button data-bind='click:BillModelView.resetBill'
+					style="left: 315px;">Reset</button>
+			</form>
+		</div>
+	</div>
+</div>

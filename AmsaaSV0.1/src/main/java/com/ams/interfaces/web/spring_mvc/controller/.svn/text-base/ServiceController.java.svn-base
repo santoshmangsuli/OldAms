@@ -1,0 +1,75 @@
+package com.ams.interfaces.web.spring_mvc.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.ams.application.common.ServiceException;
+import com.ams.application.service.apartmentservicemanagerservice.ManageService;
+import com.ams.domain.model.service.Service;
+
+@Controller
+public class ServiceController
+{
+	@Autowired
+	private ManageService	manageService;
+
+	@RequestMapping("services")
+	@ResponseBody
+	public List<Service> getServiceList()
+	{
+
+		return manageService.getAllServices();
+	}
+
+	@RequestMapping("service/{srvcCode}")
+	@ResponseBody
+	public Service getServiceDetail(@PathVariable String srvcCode)
+	{
+		return manageService.getService(srvcCode);
+
+	}
+
+	@RequestMapping(value = "service",method = RequestMethod.POST)
+	@ResponseBody
+	public List<Service> saveService(@RequestBody final Service service) throws ServiceException
+	{
+		try
+		{
+			System.out.println(service.getSrvcCode());
+			manageService.registerService(service);
+			return this.getServiceList();
+		} catch (Exception e)
+		{
+			throw new ServiceException(e.toString());
+		}
+
+	}
+
+	@RequestMapping(value = "service",method = RequestMethod.PUT)
+	@ResponseBody
+	public List<Service> updateServiceDetail(@RequestBody final Service service)
+	{
+		System.out.println(service.getSrvcCode());
+		manageService.updateServiceDetails(service);
+		return this.getServiceList();
+
+	}
+
+	@RequestMapping(value = "service/{srvcCode}",method = RequestMethod.DELETE)
+	@ResponseBody
+	public List<Service> deleteService(@PathVariable final String srvcCode)
+	{
+		System.out.println(srvcCode);
+		manageService.deleteService(srvcCode);
+		return this.getServiceList();
+
+	}
+
+}

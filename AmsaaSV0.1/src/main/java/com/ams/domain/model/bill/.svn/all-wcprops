@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/main/java/com/ams/domain/model/bill
+END
+BillSpecification.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/main/java/com/ams/domain/model/bill/BillSpecification.java
+END
+BillItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/main/java/com/ams/domain/model/bill/BillItem.java
+END
+Bill.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/main/java/com/ams/domain/model/bill/Bill.java
+END
+Payment.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/main/java/com/ams/domain/model/bill/Payment.java
+END
+BillPaymentRegister.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sandbox/!svn/ver/2/AmsaaS/trunk/AmsaaS/src/main/java/com/ams/domain/model/bill/BillPaymentRegister.java
+END

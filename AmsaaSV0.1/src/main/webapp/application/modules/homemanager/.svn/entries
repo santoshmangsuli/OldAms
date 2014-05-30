@@ -1,0 +1,37 @@
+10
+
+dir
+2
+https://mib-ideapad/svn/sandbox/AmsaaS/trunk/AmsaaS/src/main/webapp/application/modules/homemanager
+https://mib-ideapad/svn/sandbox
+
+
+
+2013-07-18T08:09:26.128587Z
+2
+rags
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dce6ebc2-5a72-0648-8027-5589298ae9bf
+
+controller
+dir
+
+model
+dir
+
+views
+dir
+

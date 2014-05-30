@@ -1,0 +1,2527 @@
+/* 
+ *   Document   : Application Style
+ *   Author     : Raghavendra Badiger
+ *   Description: Stylesheet to provide custom Glyphicons
+ */
+
+
+
+.glyphicons_000_glass {
+	background-position: 0 0;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_001_leaf {
+	background-position: 0 -38px;
+	width: 24px;
+	height: 25px;
+}
+
+.glyphicons_002_dog {
+	background-position: 0 -77px;
+	width: 26px;
+	height: 25px;
+}
+
+.glyphicons_003_user {
+	background-position: 0 -116px;
+	width: 23px;
+	height: 22px;
+}
+
+.glyphicons_004_girl {
+	background-position: 0 -152px;
+	width: 22px;
+	height: 22px;
+}
+
+.glyphicons_005_car {
+	background-position: 0 -188px;
+	width: 26px;
+	height: 22px;
+}
+
+.glyphicons_006_user_add {
+	background-position: 0 -224px;
+	width: 28px;
+	height: 22px;
+}
+
+.glyphicons_007_user_remove {
+	background-position: 0 -260px;
+	width: 26px;
+	height: 22px;
+}
+
+.glyphicons_008_film {
+	background-position: 0 -296px;
+	width: 22px;
+	height: 26px;
+}
+
+.glyphicons_009_magic {
+	background-position: 0 -336px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_010_envelope {
+	background-position: 0 -374px;
+	width: 24px;
+	height: 16px;
+}
+
+.glyphicons_011_camera {
+	background-position: 0 -404px;
+	width: 26px;
+	height: 20px;
+}
+
+.glyphicons_012_heart {
+	background-position: 0 -438px;
+	width: 24px;
+	height: 22px;
+}
+
+.glyphicons_013_beach_umbrella {
+	background-position: 0 -474px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_014_train {
+	background-position: 0 -512px;
+	width: 20px;
+	height: 26px;
+}
+
+.glyphicons_015_print {
+	background-position: 0 -552px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_016_bin {
+	background-position: 0 -590px;
+	width: 20px;
+	height: 28px;
+}
+
+.glyphicons_017_music {
+	background-position: 0 -632px;
+	width: 21px;
+	height: 25px;
+}
+
+.glyphicons_018_note {
+	background-position: 0 -671px;
+	width: 18px;
+	height: 25px;
+}
+
+.glyphicons_019_heart_empty {
+	background-position: 0 -710px;
+	width: 24px;
+	height: 22px;
+}
+
+.glyphicons_020_home {
+	background-position: 0 -746px;
+	width: 27px;
+	height: 26px;
+}
+
+.glyphicons_021_snowflake {
+	background-position: 0 -786px;
+	width: 28px;
+	height: 28px;
+}
+
+.glyphicons_022_fire {
+	background-position: 0 -828px;
+	width: 21px;
+	height: 26px;
+}
+
+.glyphicons_023_magnet {
+	background-position: 0 -868px;
+	width: 21px;
+	height: 23px;
+}
+
+.glyphicons_024_parents {
+	background-position: 0 -905px;
+	width: 32px;
+	height: 22px;
+}
+
+.glyphicons_025_binoculars {
+	background-position: 0 -941px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_026_road {
+	background-position: 0 -979px;
+	width: 28px;
+	height: 24px;
+}
+
+.glyphicons_027_search {
+	background-position: 0 -1017px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_028_cars {
+	background-position: 0 -1055px;
+	width: 36px;
+	height: 25px;
+}
+
+.glyphicons_029_notes_2 {
+	background-position: 0 -1094px;
+	width: 20px;
+	height: 27px;
+}
+
+.glyphicons_030_pencil {
+	background-position: 0 -1135px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_031_bus {
+	background-position: 0 -1173px;
+	width: 32px;
+	height: 25px;
+}
+
+.glyphicons_032_wifi_alt {
+	background-position: 0 -1212px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_033_luggage {
+	background-position: 0 -1252px;
+	width: 20px;
+	height: 27px;
+}
+
+.glyphicons_034_old_man {
+	background-position: 0 -1293px;
+	width: 23px;
+	height: 24px;
+}
+
+.glyphicons_035_woman {
+	background-position: 0 -1331px;
+	width: 22px;
+	height: 22px;
+}
+
+.glyphicons_036_file {
+	background-position: 0 -1367px;
+	width: 19px;
+	height: 24px;
+}
+
+.glyphicons_037_coins {
+	background-position: 0 -1405px;
+	width: 26px;
+	height: 24px;
+}
+
+.glyphicons_038_airplane {
+	background-position: 0 -1443px;
+	width: 24px;
+	height: 25px;
+}
+
+.glyphicons_039_notes {
+	background-position: 0 -1482px;
+	width: 20px;
+	height: 25px;
+}
+
+.glyphicons_040_stats {
+	background-position: 0 -1521px;
+	width: 26px;
+	height: 25px;
+}
+
+.glyphicons_041_charts {
+	background-position: 0 -1560px;
+	width: 27px;
+	height: 24px;
+}
+
+.glyphicons_042_pie_chart {
+	background-position: 0 -1598px;
+	width: 26px;
+	height: 25px;
+}
+
+.glyphicons_043_group {
+	background-position: 0 -1637px;
+	width: 35px;
+	height: 22px;
+}
+
+.glyphicons_044_keys {
+	background-position: 0 -1673px;
+	width: 24px;
+	height: 26px;
+}
+
+.glyphicons_045_calendar {
+	background-position: 0 -1713px;
+	width: 23px;
+	height: 24px;
+}
+
+.glyphicons_046_router {
+	background-position: 0 -1751px;
+	width: 27px;
+	height: 26px;
+}
+
+.glyphicons_047_camera_small {
+	background-position: 0 -1791px;
+	width: 22px;
+	height: 24px;
+}
+
+.glyphicons_048_dislikes {
+	background-position: 0 -1829px;
+	width: 25px;
+	height: 24px;
+}
+
+.glyphicons_049_star {
+	background-position: 0 -1867px;
+	width: 25px;
+	height: 24px;
+}
+
+.glyphicons_050_link {
+	background-position: 0 -1905px;
+	width: 21px;
+	height: 23px;
+}
+
+.glyphicons_051_eye_open {
+	background-position: 0 -1942px;
+	width: 31px;
+	height: 17px;
+}
+
+.glyphicons_052_eye_close {
+	background-position: 0 -1973px;
+	width: 31px;
+	height: 24px;
+}
+
+.glyphicons_053_alarm {
+	background-position: -50px 0;
+	width: 27px;
+	height: 25px;
+}
+
+.glyphicons_054_clock {
+	background-position: -50px -39px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_055_stopwatch {
+	background-position: -50px -77px;
+	width: 23px;
+	height: 27px;
+}
+
+.glyphicons_056_projector {
+	background-position: -50px -118px;
+	width: 28px;
+	height: 25px;
+}
+
+.glyphicons_057_history {
+	background-position: -50px -157px;
+	width: 25px;
+	height: 26px;
+}
+
+.glyphicons_058_truck {
+	background-position: -50px -197px;
+	width: 32px;
+	height: 27px;
+}
+
+.glyphicons_059_cargo {
+	background-position: -50px -238px;
+	width: 25px;
+	height: 26px;
+}
+
+.glyphicons_060_compass {
+	background-position: -50px -278px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_061_keynote {
+	background-position: -50px -316px;
+	width: 20px;
+	height: 30px;
+}
+
+.glyphicons_062_paperclip {
+	background-position: -50px -360px;
+	width: 26px;
+	height: 24px;
+}
+
+.glyphicons_063_power {
+	background-position: -50px -398px;
+	width: 22px;
+	height: 24px;
+}
+
+.glyphicons_064_lightbulb {
+	background-position: -50px -436px;
+	width: 20px;
+	height: 26px;
+}
+
+.glyphicons_065_tag {
+	background-position: -50px -476px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_066_tags {
+	background-position: -50px -514px;
+	width: 30px;
+	height: 24px;
+}
+
+.glyphicons_067_cleaning {
+	background-position: -50px -552px;
+	width: 24px;
+	height: 25px;
+}
+
+.glyphicons_068_ruller {
+	background-position: -50px -591px;
+	width: 27px;
+	height: 14px;
+}
+
+.glyphicons_069_gift {
+	background-position: -50px -619px;
+	width: 24px;
+	height: 25px;
+}
+
+.glyphicons_070_umbrella {
+	background-position: -50px -658px;
+	width: 26px;
+	height: 28px;
+}
+
+.glyphicons_071_book {
+	background-position: -50px -700px;
+	width: 22px;
+	height: 24px;
+}
+
+.glyphicons_072_bookmark {
+	background-position: -50px -738px;
+	width: 15px;
+	height: 24px;
+}
+
+.glyphicons_073_wifi {
+	background-position: -50px -776px;
+	width: 31px;
+	height: 23px;
+}
+
+.glyphicons_074_cup {
+	background-position: -50px -813px;
+	width: 22px;
+	height: 24px;
+}
+
+.glyphicons_075_stroller {
+	background-position: -50px -851px;
+	width: 25px;
+	height: 26px;
+}
+
+.glyphicons_076_headphones {
+	background-position: -50px -891px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_077_headset {
+	background-position: -50px -929px;
+	width: 24px;
+	height: 28px;
+}
+
+.glyphicons_078_warning_sign {
+	background-position: -50px -971px;
+	width: 29px;
+	height: 24px;
+}
+
+.glyphicons_079_signal {
+	background-position: -50px -1009px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_080_retweet {
+	background-position: -50px -1047px;
+	width: 28px;
+	height: 15px;
+}
+
+.glyphicons_081_refresh {
+	background-position: -50px -1076px;
+	width: 25px;
+	height: 26px;
+}
+
+.glyphicons_082_roundabout {
+	background-position: -50px -1116px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_083_random {
+	background-position: -50px -1156px;
+	width: 28px;
+	height: 20px;
+}
+
+.glyphicons_084_heat {
+	background-position: -50px -1190px;
+	width: 29px;
+	height: 25px;
+}
+
+.glyphicons_085_repeat {
+	background-position: -50px -1229px;
+	width: 23px;
+	height: 26px;
+}
+
+.glyphicons_086_display {
+	background-position: -50px -1269px;
+	width: 28px;
+	height: 24px;
+}
+
+.glyphicons_087_log_book {
+	background-position: -50px -1307px;
+	width: 22px;
+	height: 24px;
+}
+
+.glyphicons_088_adress_book {
+	background-position: -50px -1345px;
+	width: 22px;
+	height: 24px;
+}
+
+.glyphicons_089_building {
+	background-position: -50px -1383px;
+	width: 24px;
+	height: 26px;
+}
+
+.glyphicons_090_eyedropper {
+	background-position: -50px -1423px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_091_adjust {
+	background-position: -50px -1461px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_092_tint {
+	background-position: -50px -1501px;
+	width: 24px;
+	height: 25px;
+}
+
+.glyphicons_093_crop {
+	background-position: -50px -1540px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_094_vector_path_square {
+	background-position: -50px -1580px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_095_vector_path_circle {
+	background-position: -50px -1618px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_096_vector_path_polygon {
+	background-position: -50px -1656px;
+	width: 26px;
+	height: 25px;
+}
+
+.glyphicons_097_vector_path_line {
+	background-position: -50px -1695px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_098_vector_path_curve {
+	background-position: -50px -1733px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_099_vector_path_all {
+	background-position: -50px -1771px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_100_font {
+	background-position: -50px -1809px;
+	width: 27px;
+	height: 23px;
+}
+
+.glyphicons_101_italic {
+	background-position: -50px -1846px;
+	width: 14px;
+	height: 24px;
+}
+
+.glyphicons_102_bold {
+	background-position: -50px -1884px;
+	width: 19px;
+	height: 24px;
+}
+
+.glyphicons_103_text_underline {
+	background-position: -50px -1922px;
+	width: 20px;
+	height: 24px;
+}
+
+.glyphicons_104_text_strike {
+	background-position: -50px -1960px;
+	width: 20px;
+	height: 22px;
+}
+
+.glyphicons_105_text_height {
+	background-position: -100px 0;
+	width: 26px;
+	height: 24px;
+}
+
+.glyphicons_106_text_width {
+	background-position: -100px -38px;
+	width: 22px;
+	height: 24px;
+}
+
+.glyphicons_107_text_resize {
+	background-position: -100px -76px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_108_left_indent {
+	background-position: -100px -116px;
+	width: 24px;
+	height: 22px;
+}
+
+.glyphicons_109_right_indent {
+	background-position: -100px -152px;
+	width: 24px;
+	height: 22px;
+}
+
+.glyphicons_110_align_left {
+	background-position: -100px -188px;
+	width: 24px;
+	height: 21px;
+}
+
+.glyphicons_111_align_center {
+	background-position: -100px -223px;
+	width: 24px;
+	height: 21px;
+}
+
+.glyphicons_112_align_right {
+	background-position: -100px -258px;
+	width: 24px;
+	height: 21px;
+}
+
+.glyphicons_113_justify {
+	background-position: -100px -293px;
+	width: 24px;
+	height: 21px;
+}
+
+.glyphicons_114_list {
+	background-position: -100px -328px;
+	width: 24px;
+	height: 21px;
+}
+
+.glyphicons_115_text_smaller {
+	background-position: -100px -363px;
+	width: 22px;
+	height: 16px;
+}
+
+.glyphicons_116_text_bigger {
+	background-position: -100px -393px;
+	width: 24px;
+	height: 22px;
+}
+
+.glyphicons_117_embed {
+	background-position: -100px -429px;
+	width: 30px;
+	height: 14px;
+}
+
+.glyphicons_118_embed_close {
+	background-position: -100px -457px;
+	width: 30px;
+	height: 24px;
+}
+
+.glyphicons_119_table {
+	background-position: -100px -495px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_120_message_full {
+	background-position: -100px -533px;
+	width: 24px;
+	height: 28px;
+}
+
+.glyphicons_121_message_empty {
+	background-position: -100px -575px;
+	width: 24px;
+	height: 28px;
+}
+
+.glyphicons_122_message_in {
+	background-position: -100px -617px;
+	width: 24px;
+	height: 28px;
+}
+
+.glyphicons_123_message_out {
+	background-position: -100px -659px;
+	width: 24px;
+	height: 28px;
+}
+
+.glyphicons_124_message_plus {
+	background-position: -100px -701px;
+	width: 29px;
+	height: 23px;
+}
+
+.glyphicons_125_message_minus {
+	background-position: -100px -738px;
+	width: 29px;
+	height: 23px;
+}
+
+.glyphicons_126_message_ban {
+	background-position: -100px -775px;
+	width: 29px;
+	height: 23px;
+}
+
+.glyphicons_127_message_flag {
+	background-position: -100px -812px;
+	width: 27px;
+	height: 23px;
+}
+
+.glyphicons_128_message_lock {
+	background-position: -100px -849px;
+	width: 28px;
+	height: 24px;
+}
+
+.glyphicons_129_message_new {
+	background-position: -100px -887px;
+	width: 28px;
+	height: 22px;
+}
+
+.glyphicons_130_inbox {
+	background-position: -100px -923px;
+	width: 24px;
+	height: 23px;
+}
+
+.glyphicons_131_inbox_plus {
+	background-position: -100px -960px;
+	width: 27px;
+	height: 27px;
+}
+
+.glyphicons_132_inbox_minus {
+	background-position: -100px -1001px;
+	width: 27px;
+	height: 27px;
+}
+
+.glyphicons_133_inbox_lock {
+	background-position: -100px -1042px;
+	width: 26px;
+	height: 28px;
+}
+
+.glyphicons_134_inbox_in {
+	background-position: -100px -1084px;
+	width: 24px;
+	height: 26px;
+}
+
+.glyphicons_135_inbox_out {
+	background-position: -100px -1124px;
+	width: 24px;
+	height: 26px;
+}
+
+.glyphicons_136_cogwheel {
+	background-position: -100px -1164px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_137_cogwheels {
+	background-position: -100px -1202px;
+	width: 34px;
+	height: 27px;
+}
+
+.glyphicons_138_picture {
+	background-position: -100px -1243px;
+	width: 24px;
+	height: 20px;
+}
+
+.glyphicons_139_adjust_alt {
+	background-position: -100px -1277px;
+	width: 23px;
+	height: 24px;
+}
+
+.glyphicons_140_database_lock {
+	background-position: -100px -1315px;
+	width: 26px;
+	height: 28px;
+}
+
+.glyphicons_141_database_plus {
+	background-position: -100px -1357px;
+	width: 27px;
+	height: 27px;
+}
+
+.glyphicons_142_database_minus {
+	background-position: -100px -1398px;
+	width: 27px;
+	height: 27px;
+}
+
+.glyphicons_143_database_ban {
+	background-position: -100px -1439px;
+	width: 26px;
+	height: 27px;
+}
+
+.glyphicons_144_folder_open {
+	background-position: -100px -1480px;
+	width: 30px;
+	height: 22px;
+}
+
+.glyphicons_145_folder_plus {
+	background-position: -100px -1516px;
+	width: 29px;
+	height: 25px;
+}
+
+.glyphicons_146_folder_minus {
+	background-position: -100px -1555px;
+	width: 29px;
+	height: 25px;
+}
+
+.glyphicons_147_folder_lock {
+	background-position: -100px -1594px;
+	width: 28px;
+	height: 26px;
+}
+
+.glyphicons_148_folder_flag {
+	background-position: -100px -1634px;
+	width: 27px;
+	height: 25px;
+}
+
+.glyphicons_149_folder_new {
+	background-position: -100px -1673px;
+	width: 28px;
+	height: 24px;
+}
+
+.glyphicons_150_edit {
+	background-position: -100px -1711px;
+	width: 24px;
+	height: 21px;
+}
+
+.glyphicons_151_new_window {
+	background-position: -100px -1746px;
+	width: 26px;
+	height: 22px;
+}
+
+.glyphicons_152_check {
+	background-position: -100px -1782px;
+	width: 22px;
+	height: 18px;
+}
+
+.glyphicons_153_unchecked {
+	background-position: -100px -1814px;
+	width: 18px;
+	height: 18px;
+}
+
+.glyphicons_154_more_windows {
+	background-position: -100px -1846px;
+	width: 23px;
+	height: 23px;
+}
+
+.glyphicons_155_show_big_thumbnails {
+	background-position: -100px -1883px;
+	width: 22px;
+	height: 22px;
+}
+
+.glyphicons_156_show_thumbnails {
+	background-position: -100px -1919px;
+	width: 22px;
+	height: 22px;
+}
+
+.glyphicons_157_show_thumbnails_with_lines {
+	background-position: -100px -1955px;
+	width: 24px;
+	height: 15px;
+}
+
+.glyphicons_158_show_lines {
+	background-position: -100px -1984px;
+	width: 24px;
+	height: 15px;
+}
+
+.glyphicons_159_playlist {
+	background-position: -150px 0;
+	width: 29px;
+	height: 24px;
+}
+
+.glyphicons_160_imac {
+	background-position: -150px -38px;
+	width: 26px;
+	height: 22px;
+}
+
+.glyphicons_161_macbook {
+	background-position: -150px -74px;
+	width: 28px;
+	height: 15px;
+}
+
+.glyphicons_162_ipad {
+	background-position: -150px -103px;
+	width: 22px;
+	height: 27px;
+}
+
+.glyphicons_163_iphone {
+	background-position: -150px -144px;
+	width: 14px;
+	height: 24px;
+}
+
+.glyphicons_164_iphone_transfer {
+	background-position: -150px -182px;
+	width: 29px;
+	height: 24px;
+}
+
+.glyphicons_165_iphone_exchange {
+	background-position: -150px -220px;
+	width: 29px;
+	height: 24px;
+}
+
+.glyphicons_166_ipod {
+	background-position: -150px -258px;
+	width: 14px;
+	height: 22px;
+}
+
+.glyphicons_167_ipod_shuffle {
+	background-position: -150px -294px;
+	width: 15px;
+	height: 13px;
+}
+
+.glyphicons_168_ear_plugs {
+	background-position: -150px -321px;
+	width: 20px;
+	height: 24px;
+}
+
+.glyphicons_169_phone {
+	background-position: -150px -359px;
+	width: 15px;
+	height: 25px;
+}
+
+.glyphicons_170_step_backward {
+	background-position: -150px -398px;
+	width: 14px;
+	height: 18px;
+}
+
+.glyphicons_171_fast_backward {
+	background-position: -150px -430px;
+	width: 25px;
+	height: 18px;
+}
+
+.glyphicons_172_rewind {
+	background-position: -150px -462px;
+	width: 23px;
+	height: 18px;
+}
+
+.glyphicons_173_play {
+	background-position: -150px -494px;
+	width: 16px;
+	height: 18px;
+}
+
+.glyphicons_174_pause {
+	background-position: -150px -526px;
+	width: 10px;
+	height: 16px;
+}
+
+.glyphicons_175_stop {
+	background-position: -150px -556px;
+	width: 14px;
+	height: 14px;
+}
+
+.glyphicons_176_forward {
+	background-position: -150px -584px;
+	width: 23px;
+	height: 18px;
+}
+
+.glyphicons_177_fast_forward {
+	background-position: -150px -616px;
+	width: 25px;
+	height: 18px;
+}
+
+.glyphicons_178_step_forward {
+	background-position: -150px -648px;
+	width: 14px;
+	height: 18px;
+}
+
+.glyphicons_179_eject {
+	background-position: -150px -680px;
+	width: 18px;
+	height: 17px;
+}
+
+.glyphicons_180_facetime_video {
+	background-position: -150px -711px;
+	width: 24px;
+	height: 16px;
+}
+
+.glyphicons_181_download_alt {
+	background-position: -150px -741px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_182_mute {
+	background-position: -150px -779px;
+	width: 22px;
+	height: 15px;
+}
+
+.glyphicons_183_volume_down {
+	background-position: -150px -808px;
+	width: 16px;
+	height: 15px;
+}
+
+.glyphicons_184_volume_up {
+	background-position: -150px -837px;
+	width: 24px;
+	height: 26px;
+}
+
+.glyphicons_185_screenshot {
+	background-position: -150px -877px;
+	width: 27px;
+	height: 27px;
+}
+
+.glyphicons_186_move {
+	background-position: -150px -918px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_187_more {
+	background-position: -150px -956px;
+	width: 22px;
+	height: 6px;
+}
+
+.glyphicons_188_brightness_reduce {
+	background-position: -150px -976px;
+	width: 20px;
+	height: 20px;
+}
+
+.glyphicons_189_brightness_increase {
+	background-position: -150px -1010px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_190_circle_plus {
+	background-position: -150px -1048px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_191_circle_minus {
+	background-position: -150px -1088px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_192_circle_remove {
+	background-position: -150px -1128px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_193_circle_ok {
+	background-position: -150px -1168px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_194_circle_question_mark {
+	background-position: -150px -1208px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_195_circle_info {
+	background-position: -150px -1248px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_196_circle_exclamation_mark {
+	background-position: -150px -1288px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_197_remove {
+	background-position: -150px -1328px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_198_ok {
+	background-position: -150px -1368px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_199_ban {
+	background-position: -150px -1408px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_200_download {
+	background-position: -150px -1448px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_201_upload {
+	background-position: -150px -1488px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_202_shopping_cart {
+	background-position: -150px -1528px;
+	width: 26px;
+	height: 23px;
+}
+
+.glyphicons_203_lock {
+	background-position: -150px -1565px;
+	width: 21px;
+	height: 26px;
+}
+
+.glyphicons_204_unlock {
+	background-position: -150px -1605px;
+	width: 21px;
+	height: 26px;
+}
+
+.glyphicons_205_electricity {
+	background-position: -150px -1645px;
+	width: 11px;
+	height: 24px;
+}
+
+.glyphicons_206_ok_2 {
+	background-position: -150px -1683px;
+	width: 25px;
+	height: 19px;
+}
+
+.glyphicons_207_remove_2 {
+	background-position: -150px -1716px;
+	width: 18px;
+	height: 18px;
+}
+
+.glyphicons_208_cart_out {
+	background-position: -150px -1748px;
+	width: 26px;
+	height: 25px;
+}
+
+.glyphicons_209_cart_in {
+	background-position: -150px -1787px;
+	width: 26px;
+	height: 24px;
+}
+
+.glyphicons_210_left_arrow {
+	background-position: -150px -1825px;
+	width: 20px;
+	height: 18px;
+}
+
+.glyphicons_211_right_arrow {
+	background-position: -150px -1857px;
+	width: 20px;
+	height: 18px;
+}
+
+.glyphicons_212_down_arrow {
+	background-position: -150px -1889px;
+	width: 18px;
+	height: 20px;
+}
+
+.glyphicons_213_up_arrow {
+	background-position: -150px -1923px;
+	width: 18px;
+	height: 20px;
+}
+
+.glyphicons_214_resize_small {
+	background-position: -150px -1957px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_215_resize_full {
+	background-position: -200px 0;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_216_circle_arrow_left {
+	background-position: -200px -38px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_217_circle_arrow_right {
+	background-position: -200px -78px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_218_circle_arrow_top {
+	background-position: -200px -118px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_219_circle_arrow_down {
+	background-position: -200px -158px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_220_play_button {
+	background-position: -200px -198px;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_221_unshare {
+	background-position: -200px -238px;
+	width: 24px;
+	height: 18px;
+}
+
+.glyphicons_222_share {
+	background-position: -200px -270px;
+	width: 24px;
+	height: 18px;
+}
+
+.glyphicons_223_chevron-right {
+	background-position: -200px -302px;
+	width: 15px;
+	height: 22px;
+}
+
+.glyphicons_224_chevron-left {
+	background-position: -200px -338px;
+	width: 15px;
+	height: 22px;
+}
+
+.glyphicons_225_bluetooth {
+	background-position: -200px -374px;
+	width: 14px;
+	height: 24px;
+}
+
+.glyphicons_226_euro {
+	background-position: -200px -412px;
+	width: 22px;
+	height: 23px;
+}
+
+.glyphicons_227_usd {
+	background-position: -200px -449px;
+	width: 17px;
+	height: 26px;
+}
+
+.glyphicons_228_gbp {
+	background-position: -200px -489px;
+	width: 17px;
+	height: 24px;
+}
+
+.glyphicons_229_retweet_2 {
+	background-position: -200px -527px;
+	width: 33px;
+	height: 21px;
+}
+
+.glyphicons_230_moon {
+	background-position: -200px -562px;
+	width: 21px;
+	height: 24px;
+}
+
+.glyphicons_231_sun {
+	background-position: -200px -600px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_232_cloud {
+	background-position: -200px -638px;
+	width: 27px;
+	height: 17px;
+}
+
+.glyphicons_233_direction {
+	background-position: -200px -669px;
+	width: 25px;
+	height: 26px;
+}
+
+.glyphicons_234_brush {
+	background-position: -200px -709px;
+	width: 25px;
+	height: 22px;
+}
+
+.glyphicons_235_pen {
+	background-position: -200px -745px;
+	width: 23px;
+	height: 23px;
+}
+
+.glyphicons_236_zoom_in {
+	background-position: -200px -782px;
+	width: 25px;
+	height: 25px;
+}
+
+.glyphicons_237_zoom_out {
+	background-position: -200px -821px;
+	width: 25px;
+	height: 25px;
+}
+
+.glyphicons_238_pin {
+	background-position: -200px -860px;
+	width: 10px;
+	height: 24px;
+}
+
+.glyphicons_239_albums {
+	background-position: -200px -898px;
+	width: 28px;
+	height: 18px;
+}
+
+.glyphicons_240_rotation_lock {
+	background-position: -200px -930px;
+	width: 27px;
+	height: 24px;
+}
+
+.glyphicons_241_flash {
+	background-position: -200px -968px;
+	width: 14px;
+	height: 24px;
+}
+
+.glyphicons_242_google_maps {
+	background-position: -200px -1006px;
+	width: 16px;
+	height: 24px;
+}
+
+.glyphicons_243_anchor {
+	background-position: -200px -1044px;
+	width: 24px;
+	height: 25px;
+}
+
+.glyphicons_244_conversation {
+	background-position: -200px -1083px;
+	width: 25px;
+	height: 18px;
+}
+
+.glyphicons_245_chat {
+	background-position: -200px -1115px;
+	width: 24px;
+	height: 19px;
+}
+
+.glyphicons_246_male {
+	background-position: -200px -1148px;
+	width: 22px;
+	height: 22px;
+}
+
+.glyphicons_247_female {
+	background-position: -200px -1184px;
+	width: 16px;
+	height: 27px;
+}
+
+.glyphicons_248_asterisk {
+	background-position: -200px -1225px;
+	width: 20px;
+	height: 20px;
+}
+
+.glyphicons_249_divide {
+	background-position: -200px -1259px;
+	width: 18px;
+	height: 16px;
+}
+
+.glyphicons_250_snorkel_diving {
+	background-position: -200px -1289px;
+	width: 27px;
+	height: 25px;
+}
+
+.glyphicons_251_scuba_diving {
+	background-position: -200px -1328px;
+	width: 27px;
+	height: 24px;
+}
+
+.glyphicons_252_oxygen_bottle {
+	background-position: -200px -1366px;
+	width: 22px;
+	height: 27px;
+}
+
+.glyphicons_253_fins {
+	background-position: -200px -1407px;
+	width: 31px;
+	height: 27px;
+}
+
+.glyphicons_254_fishes {
+	background-position: -200px -1448px;
+	width: 28px;
+	height: 30px;
+}
+
+.glyphicons_255_boat {
+	background-position: -200px -1492px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_256_delete {
+	background-position: -200px -1530px;
+	width: 26px;
+	height: 17px;
+}
+
+.glyphicons_257_sheriffs_star {
+	background-position: -200px -1561px;
+	width: 24px;
+	height: 26px;
+}
+
+.glyphicons_258_qrcode {
+	background-position: -200px -1601px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_259_barcode {
+	background-position: -200px -1639px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_260_pool {
+	background-position: -200px -1677px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_261_buoy {
+	background-position: -200px -1715px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_262_spade {
+	background-position: -200px -1753px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_263_bank {
+	background-position: -200px -1791px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_264_vcard {
+	background-position: -200px -1829px;
+	width: 22px;
+	height: 24px;
+}
+
+.glyphicons_265_electrical_plug {
+	background-position: -200px -1867px;
+	width: 18px;
+	height: 25px;
+}
+
+.glyphicons_266_flag {
+	background-position: -200px -1906px;
+	width: 21px;
+	height: 26px;
+}
+
+.glyphicons_267_credit_card {
+	background-position: -200px -1946px;
+	width: 26px;
+	height: 19px;
+}
+
+.glyphicons_268_keyboard_wireless {
+	background-position: -200px -1979px;
+	width: 27px;
+	height: 19px;
+}
+
+.glyphicons_269_keyboard_wired {
+	background-position: -250px 0;
+	width: 27px;
+	height: 25px;
+}
+
+.glyphicons_270_shield {
+	background-position: -250px -39px;
+	width: 22px;
+	height: 24px;
+}
+
+.glyphicons_271_ring {
+	background-position: -250px -77px;
+	width: 21px;
+	height: 24px;
+}
+
+.glyphicons_272_cake {
+	background-position: -250px -115px;
+	width: 22px;
+	height: 24px;
+}
+
+.glyphicons_273_drink {
+	background-position: -250px -153px;
+	width: 23px;
+	height: 24px;
+}
+
+.glyphicons_274_beer {
+	background-position: -250px -191px;
+	width: 23px;
+	height: 24px;
+}
+
+.glyphicons_275_fast_food {
+	background-position: -250px -229px;
+	width: 28px;
+	height: 24px;
+}
+
+.glyphicons_276_cutlery {
+	background-position: -250px -267px;
+	width: 13px;
+	height: 24px;
+}
+
+.glyphicons_277_pizza {
+	background-position: -250px -305px;
+	width: 26px;
+	height: 29px;
+}
+
+.glyphicons_278_birthday_cake {
+	background-position: -250px -348px;
+	width: 26px;
+	height: 29px;
+}
+
+.glyphicons_279_tablet {
+	background-position: -250px -391px;
+	width: 25px;
+	height: 25px;
+}
+
+.glyphicons_280_settings {
+	background-position: -250px -430px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_281_bullets {
+	background-position: -250px -468px;
+	width: 27px;
+	height: 23px;
+}
+
+.glyphicons_282_cardio {
+	background-position: -250px -505px;
+	width: 25px;
+	height: 26px;
+}
+
+.glyphicons_283_t-shirt {
+	background-position: -250px -545px;
+	width: 28px;
+	height: 23px;
+}
+
+.glyphicons_284_pants {
+	background-position: -250px -582px;
+	width: 19px;
+	height: 24px;
+}
+
+.glyphicons_285_sweater {
+	background-position: -250px -620px;
+	width: 29px;
+	height: 24px;
+}
+
+.glyphicons_286_fabric {
+	background-position: -250px -658px;
+	width: 27px;
+	height: 22px;
+}
+
+.glyphicons_287_leather {
+	background-position: -250px -694px;
+	width: 23px;
+	height: 24px;
+}
+
+.glyphicons_288_scissors {
+	background-position: -250px -732px;
+	width: 24px;
+	height: 27px;
+}
+
+.glyphicons_289_bomb {
+	background-position: -250px -773px;
+	width: 27px;
+	height: 25px;
+}
+
+.glyphicons_290_skull {
+	background-position: -250px -812px;
+	width: 22px;
+	height: 24px;
+}
+
+.glyphicons_291_celebration {
+	background-position: -250px -850px;
+	width: 24px;
+	height: 25px;
+}
+
+.glyphicons_292_tea_kettle {
+	background-position: -250px -889px;
+	width: 26px;
+	height: 23px;
+}
+
+.glyphicons_293_french_press {
+	background-position: -250px -926px;
+	width: 23px;
+	height: 25px;
+}
+
+.glyphicons_294_coffe_cup {
+	background-position: -250px -965px;
+	width: 25px;
+	height: 19px;
+}
+
+.glyphicons_295_pot {
+	background-position: -250px -998px;
+	width: 27px;
+	height: 22px;
+}
+
+.glyphicons_296_grater {
+	background-position: -250px -1034px;
+	width: 18px;
+	height: 24px;
+}
+
+.glyphicons_297_kettle {
+	background-position: -250px -1072px;
+	width: 23px;
+	height: 24px;
+}
+
+.glyphicons_298_hospital {
+	background-position: -250px -1110px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_299_hospital_h {
+	background-position: -250px -1148px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_300_microphone {
+	background-position: -250px -1186px;
+	width: 17px;
+	height: 24px;
+}
+
+.glyphicons_301_webcam {
+	background-position: -250px -1224px;
+	width: 19px;
+	height: 24px;
+}
+
+.glyphicons_302_temple_christianity_church {
+	background-position: -250px -1262px;
+	width: 24px;
+	height: 25px;
+}
+
+.glyphicons_303_temple_islam {
+	background-position: -250px -1301px;
+	width: 25px;
+	height: 24px;
+}
+
+.glyphicons_304_temple_hindu {
+	background-position: -250px -1339px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_305_temple_buddhist {
+	background-position: -250px -1377px;
+	width: 28px;
+	height: 22px;
+}
+
+.glyphicons_306_bicycle {
+	background-position: -250px -1413px;
+	width: 33px;
+	height: 21px;
+}
+
+.glyphicons_307_life_preserver {
+	background-position: -250px -1448px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_308_share_alt {
+	background-position: -250px -1486px;
+	width: 22px;
+	height: 22px;
+}
+
+.glyphicons_309_comments {
+	background-position: -250px -1522px;
+	width: 24px;
+	height: 23px;
+}
+
+.glyphicons_310_flower {
+	background-position: -250px -1559px;
+	width: 19px;
+	height: 25px;
+}
+
+.glyphicons_311_baseball {
+	background-position: -250px -1598px;
+	width: 25px;
+	height: 26px;
+}
+
+.glyphicons_312_rugby {
+	background-position: -250px -1638px;
+	width: 23px;
+	height: 24px;
+}
+
+.glyphicons_313_ax {
+	background-position: -250px -1676px;
+	width: 27px;
+	height: 24px;
+}
+
+.glyphicons_314_table_tennis {
+	background-position: -250px -1714px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_315_bowling {
+	background-position: -250px -1752px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_316_tree_conifer {
+	background-position: -250px -1790px;
+	width: 21px;
+	height: 24px;
+}
+
+.glyphicons_317_tree_deciduous {
+	background-position: -250px -1828px;
+	width: 20px;
+	height: 25px;
+}
+
+.glyphicons_318_more_items {
+	background-position: -250px -1867px;
+	width: 21px;
+	height: 24px;
+}
+
+.glyphicons_319_sort {
+	background-position: -250px -1905px;
+	width: 25px;
+	height: 25px;
+}
+
+.glyphicons_320_filter {
+	background-position: -250px -1944px;
+	width: 20px;
+	height: 24px;
+}
+
+.glyphicons_321_gamepad {
+	background-position: -250px -1982px;
+	width: 27px;
+	height: 19px;
+}
+
+.glyphicons_322_playing_dices {
+	background-position: -300px 0;
+	width: 27px;
+	height: 23px;
+}
+
+.glyphicons_323_calculator {
+	background-position: -300px -37px;
+	width: 21px;
+	height: 24px;
+}
+
+.glyphicons_324_tie {
+	background-position: -300px -75px;
+	width: 11px;
+	height: 26px;
+}
+
+.glyphicons_325_wallet {
+	background-position: -300px -115px;
+	width: 25px;
+	height: 20px;
+}
+
+.glyphicons_326_piano {
+	background-position: -300px -149px;
+	width: 23px;
+	height: 24px;
+}
+
+.glyphicons_327_sampler {
+	background-position: -300px -187px;
+	width: 27px;
+	height: 22px;
+}
+
+.glyphicons_328_podium {
+	background-position: -300px -223px;
+	width: 28px;
+	height: 21px;
+}
+
+.glyphicons_329_soccer_ball {
+	background-position: -300px -258px;
+	width: 25px;
+	height: 25px;
+}
+
+.glyphicons_330_blog {
+	background-position: -300px -297px;
+	width: 21px;
+	height: 23px;
+}
+
+.glyphicons_331_dashboard {
+	background-position: -300px -334px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_332_certificate {
+	background-position: -300px -372px;
+	width: 17px;
+	height: 25px;
+}
+
+.glyphicons_333_bell {
+	background-position: -300px -411px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_334_candle {
+	background-position: -300px -449px;
+	width: 20px;
+	height: 25px;
+}
+
+.glyphicons_335_pushpin {
+	background-position: -300px -488px;
+	width: 23px;
+	height: 23px;
+}
+
+.glyphicons_336_iphone_shake {
+	background-position: -300px -525px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_337_pin_flag {
+	background-position: -300px -563px;
+	width: 30px;
+	height: 22px;
+}
+
+.glyphicons_338_turtle {
+	background-position: -300px -599px;
+	width: 28px;
+	height: 16px;
+}
+
+.glyphicons_339_rabbit {
+	background-position: -300px -629px;
+	width: 26px;
+	height: 22px;
+}
+
+.glyphicons_340_globe {
+	background-position: -300px -665px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_341_briefcase {
+	background-position: -300px -703px;
+	width: 24px;
+	height: 21px;
+}
+
+.glyphicons_342_hdd {
+	background-position: -300px -738px;
+	width: 24px;
+	height: 21px;
+}
+
+.glyphicons_343_thumbs_up {
+	background-position: -300px -773px;
+	width: 24px;
+	height: 21px;
+}
+
+.glyphicons_344_thumbs_down {
+	background-position: -300px -808px;
+	width: 24px;
+	height: 21px;
+}
+
+.glyphicons_345_hand_right {
+	background-position: -300px -843px;
+	width: 26px;
+	height: 19px;
+}
+
+.glyphicons_346_hand_left {
+	background-position: -300px -876px;
+	width: 26px;
+	height: 19px;
+}
+
+.glyphicons_347_hand_up {
+	background-position: -300px -909px;
+	width: 19px;
+	height: 26px;
+}
+
+.glyphicons_348_hand_down {
+	background-position: -300px -949px;
+	width: 19px;
+	height: 27px;
+}
+
+.glyphicons_349_fullscreen {
+	background-position: -300px -990px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_350_shopping_bag {
+	background-position: -300px -1028px;
+	width: 23px;
+	height: 26px;
+}
+
+.glyphicons_351_book_open {
+	background-position: -300px -1068px;
+	width: 24px;
+	height: 22px;
+}
+
+.glyphicons_352_nameplate {
+	background-position: -300px -1104px;
+	width: 24px;
+	height: 21px;
+}
+
+.glyphicons_353_nameplate_alt {
+	background-position: -300px -1139px;
+	width: 24px;
+	height: 22px;
+}
+
+.glyphicons_354_vases {
+	background-position: -300px -1175px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_355_bullhorn {
+	background-position: -300px -1213px;
+	width: 25px;
+	height: 20px;
+}
+
+.glyphicons_356_dumbbell {
+	background-position: -300px -1247px;
+	width: 26px;
+	height: 16px;
+}
+
+.glyphicons_357_suitcase {
+	background-position: -300px -1277px;
+	width: 24px;
+	height: 22px;
+}
+
+.glyphicons_358_file_import {
+	background-position: -300px -1313px;
+	width: 22px;
+	height: 24px;
+}
+
+.glyphicons_359_file_export {
+	background-position: -300px -1351px;
+	width: 23px;
+	height: 24px;
+}
+
+.glyphicons_360_bug {
+	background-position: -300px -1389px;
+	width: 22px;
+	height: 24px;
+}
+
+.glyphicons_361_crown {
+	background-position: -300px -1427px;
+	width: 26px;
+	height: 25px;
+}
+
+.glyphicons_362_smoking {
+	background-position: -300px -1466px;
+	width: 28px;
+	height: 28px;
+}
+
+.glyphicons_363_cloud_upload {
+	background-position: -300px -1508px;
+	width: 27px;
+	height: 20px;
+}
+
+.glyphicons_364_cloud_download {
+	background-position: -300px -1542px;
+	width: 27px;
+	height: 22px;
+}
+
+.glyphicons_365_restart {
+	background-position: -300px -1578px;
+	width: 25px;
+	height: 25px;
+}
+
+.glyphicons_366_security_camera {
+	background-position: -300px -1617px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_367_expand {
+	background-position: -300px -1655px;
+	width: 19px;
+	height: 19px;
+}
+
+.glyphicons_368_collapse {
+	background-position: -300px -1688px;
+	width: 19px;
+	height: 19px;
+}
+
+.glyphicons_369_collapse_top {
+	background-position: -300px -1721px;
+	width: 19px;
+	height: 19px;
+}
+
+.glyphicons_370_globe_af {
+	background-position: -300px -1754px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_371_global {
+	background-position: -300px -1792px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_372_spray {
+	background-position: -300px -1830px;
+	width: 22px;
+	height: 27px;
+}
+
+.glyphicons_373_nails {
+	background-position: -300px -1871px;
+	width: 22px;
+	height: 26px;
+}
+
+.glyphicons_374_claw_hammer {
+	background-position: -300px -1911px;
+	width: 27px;
+	height: 26px;
+}
+
+.glyphicons_375_classic_hammer {
+	background-position: -300px -1951px;
+	width: 25px;
+	height: 26px;
+}
+
+.glyphicons_376_hand_saw {
+	background-position: -350px 0;
+	width: 26px;
+	height: 26px;
+}
+
+.glyphicons_377_riflescope {
+	background-position: -350px -40px;
+	width: 25px;
+	height: 25px;
+}
+
+.glyphicons_378_electrical_socket_eu {
+	background-position: -350px -79px;
+	width: 23px;
+	height: 23px;
+}
+
+.glyphicons_379_electrical_socket_us {
+	background-position: -350px -116px;
+	width: 23px;
+	height: 23px;
+}
+
+.glyphicons_380_pinterest {
+	background-position: -350px -153px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_381_dropbox {
+	background-position: -350px -191px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_382_google_plus {
+	background-position: -350px -229px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_383_jolicloud {
+	background-position: -350px -267px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_384_yahoo {
+	background-position: -350px -305px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_385_blogger {
+	background-position: -350px -343px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_386_picasa {
+	background-position: -350px -381px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_387_amazon {
+	background-position: -350px -419px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_388_tumblr {
+	background-position: -350px -457px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_389_wordpress {
+	background-position: -350px -495px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_390_instapaper {
+	background-position: -350px -533px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_391_evernote {
+	background-position: -350px -571px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_392_xing {
+	background-position: -350px -609px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_393_zootool {
+	background-position: -350px -647px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_394_dribbble {
+	background-position: -350px -685px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_395_deviantart {
+	background-position: -350px -723px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_396_read_it_later {
+	background-position: -350px -761px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_397_linked_in {
+	background-position: -350px -799px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_398_forrst {
+	background-position: -350px -837px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_399_pinboard {
+	background-position: -350px -875px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_400_behance {
+	background-position: -350px -913px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_401_github {
+	background-position: -350px -951px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_402_youtube {
+	background-position: -350px -989px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_403_skitch {
+	background-position: -350px -1027px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_404_4square {
+	background-position: -350px -1065px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_405_quora {
+	background-position: -350px -1103px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_406_badoo {
+	background-position: -350px -1141px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_407_spotify {
+	background-position: -350px -1179px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_408_stumbleupon {
+	background-position: -350px -1217px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_409_readability {
+	background-position: -350px -1255px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_410_facebook {
+	background-position: -350px -1293px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_411_twitter {
+	background-position: -350px -1331px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_412_instagram {
+	background-position: -350px -1369px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_413_posterous_spaces {
+	background-position: -350px -1407px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_414_vimeo {
+	background-position: -350px -1445px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_415_flickr {
+	background-position: -350px -1483px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_416_last_fm {
+	background-position: -350px -1521px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_417_rss {
+	background-position: -350px -1559px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_418_skype {
+	background-position: -350px -1597px;
+	width: 24px;
+	height: 24px;
+}
+
+.glyphicons_419_e-mail {
+	background-position: -350px -1635px;
+	width: 24px;
+	height: 24px;
+}

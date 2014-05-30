@@ -1,0 +1,157 @@
+package com.ams.domain.model.service;
+
+import static javax.persistence.AccessType.PROPERTY;
+
+import java.io.Serializable;
+import java.util.Iterator;
+import java.util.List;
+
+import javax.persistence.Access;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import org.codehaus.jackson.annotate.JsonIgnore;
+
+/**
+ * @author Raghavendra Badiger
+ * 
+ */
+@Entity
+@Access(PROPERTY)
+@Table(name = "T_SERVICE")
+public class Service implements Serializable
+{
+	/**
+	 * 
+	 */
+	private static final long	serialVersionUID	= 1L;
+	private String				srvcCode;
+	private String				srvcName;
+	private String				srvcDescription;
+	private List<ServiceRate>	srvcRateList;
+
+	public Service()
+	{}
+
+	public Service(String srvcCode, String srvcName, String srvcDescription)
+	{
+		super();
+		this.srvcCode = srvcCode;
+		this.srvcName = srvcName;
+		this.srvcDescription = srvcDescription;
+	}
+
+	public void modifyServiceDetails(String srvcName, String srvcDescr)
+	{
+		this.srvcName = srvcName;
+		this.srvcDescription = srvcDescr;
+	}
+
+	/*
+	 * ACCESSOR & MUTATORS
+	 */
+
+	@Id
+	public String getSrvcCode()
+	{
+		return this.srvcCode;
+	}
+
+	public void setSrvcCode(String srvcCode)
+	{
+		this.srvcCode = srvcCode;
+	}
+
+	public String getSrvcName()
+	{
+		return this.srvcName;
+	}
+
+	public void setSrvcName(String srvcName)
+	{
+		this.srvcName = srvcName;
+	}
+
+	public String getSrvcDescription()
+	{
+		return srvcDescription;
+	}
+
+	public void setSrvcDescription(String srvcDescription)
+	{
+		this.srvcDescription = srvcDescription;
+	}
+
+	@OneToMany(mappedBy = "service",targetEntity = ServiceRate.class,fetch = FetchType.EAGER)
+	@JsonIgnore
+	public List<ServiceRate> getSrvcRateList()
+	{
+		return srvcRateList;
+	}
+
+	public void setSrvcRateList(List<ServiceRate> srvcRateList)
+	{
+		this.srvcRateList = srvcRateList;
+	}
+
+	@Override
+	public String toString()
+	{
+		String strSrvcRate = null;
+		if (srvcRateList == null)
+		{
+			return null;
+		}
+		Iterator<ServiceRate> srvcRateItr = this.srvcRateList.iterator();
+		ServiceRate serviceRate = null;
+		while (srvcRateItr.hasNext())
+		{
+			serviceRate = srvcRateItr.next();
+			strSrvcRate += serviceRate.toString();
+		}
+		return "Service [srvcCode=" + srvcCode + ", srvcName=" + srvcName + ", srvcDescription=" + srvcDescription + strSrvcRate + "]";
+	}
+
+	@Override
+	public int hashCode()
+	{
+		final int prime = 31;
+		int result = 1;
+		result = (prime * result) + ((srvcCode == null) ? 0 : srvcCode.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj)
+	{
+		if (this == obj)
+		{
+			return true;
+		}
+		if (obj == null)
+		{
+			return false;
+		}
+		if (!(obj instanceof Service))
+		{
+			return false;
+		}
+		Service other = (Service) obj;
+		if (srvcCode == null)
+		{
+			if (other.srvcCode != null)
+			{
+				return false;
+			}
+		}
+		else if (!srvcCode.equals(other.srvcCode))
+		{
+			return false;
+		}
+		return true;
+	}
+
+}

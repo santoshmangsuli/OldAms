@@ -1,0 +1,40 @@
+/* 
+ *   Document   : Application Style
+ *   Author     : Raghavendra Badiger
+ *   Description: Stylesheet to provide custom UI styles for HOME page
+ */
+
+#Header {
+	background-color: black;
+	min-height: 150px;
+}
+
+#Main_Menu {
+margin-bottom: 10px;	
+}
+
+#Main_Menu .navbar-inner {	
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+#Main_Menu  .nav {
+margin-left: 5%;
+}
+
+
+#ContentBody {
+	margin-top: -10px;
+	min-height: 500px;
+	background-color: white;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+}
+
+#Footer {
+	background-color: black;
+}
+
+
+

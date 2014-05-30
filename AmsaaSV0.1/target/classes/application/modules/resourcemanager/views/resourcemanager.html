@@ -1,0 +1,43 @@
+<div id="resourceManagerTabs" class="tabbable">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#resMgr2" data-toggle="tab">BOOK
+				RESOURCE<i class="glyphicons_411_twitter"></i> </a>
+		</li>
+		<li><a href="#resMgr1" data-toggle="tab">REGISTER NEW
+				RESOURCE</a>
+		</li>
+	</ul>
+	<div class="tab-content">
+		<div id="resMgr2" class="tab-pane active">
+			<table>
+				<tbody>
+					<tr>
+						<th style="width: 25%">Select Resource:</th>
+						<td style="width: 45%">
+							<select
+							data-bind="options:$root.ResourceList,optionsText: 'resourceName',optionsCaption:'Select...',value:$root.resource"></select>
+
+						</td>
+					</tr>
+				</tbody>
+				<tbody data-bind='with:$root.resource'>
+					<tr>
+						<th style="width: 25%" >Name</th>
+						<th style="width: 45%">Description</th>
+
+					</tr>
+					<tr>
+						<td data-bind="text:resourceName"></td>
+						<td data-bind="text:description"></td>
+
+					</tr>
+				</tbody>
+
+			</table>
+		<div id="resCal"></div>
+
+
+		</div>
+		<div id="resMgr1"></div>
+	</div>
+</div>

@@ -1,0 +1,9 @@
+
+<div id="calendarManagerTabs" class="nestedTabs">
+	<ul>
+		<li><a href="#calendarMgr1">BOOK APPOINTMENT </a></li>
+		<li><a href="#calendarMgr2">APPOINTMENTS DASHBOARD</a></li>
+	</ul>
+	<div id="calendarMgr1"></div>
+	<div id="calendarMgr2"></div>
+</div>

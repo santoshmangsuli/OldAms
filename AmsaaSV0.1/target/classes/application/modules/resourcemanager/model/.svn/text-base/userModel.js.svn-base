@@ -1,0 +1,8 @@
+define(function(require) {
+	var userModel = {
+		firstName : ko.observable(""),
+		lastName : ko.observable(""),
+		flatNumber : ko.observable("")
+	};
+	return userModel;
+});

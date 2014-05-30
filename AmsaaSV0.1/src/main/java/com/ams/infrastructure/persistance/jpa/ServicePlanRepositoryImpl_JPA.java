@@ -1,0 +1,107 @@
+package com.ams.infrastructure.persistance.jpa;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.PersistenceContextType;
+import javax.persistence.Query;
+import javax.persistence.TypedQuery;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.ams.domain.model.service.ServicePlan;
+import com.ams.domain.model.service.ServiceRate;
+import com.ams.domain.model.service.ServiceRateId;
+import com.ams.domain.repository.ServicePlanRepository;
+
+@Repository("ServicePlanRepository")
+public class ServicePlanRepositoryImpl_JPA implements ServicePlanRepository
+{
+
+	@Autowired
+	@PersistenceContext(type = PersistenceContextType.EXTENDED)
+	private EntityManager	entityManager;
+
+	public String createOrUpdate(ServicePlan servicePlan)
+	{
+		if (servicePlan.getSrvcPlanName() == null)
+		{
+			entityManager.persist(servicePlan);
+		}
+		else
+		{
+			entityManager.merge(servicePlan);
+		}
+
+		return servicePlan.getSrvcPlanName();
+	}
+
+	public void delete(String srvcPlanName)
+	{
+		ServicePlan servicePlan = entityManager.find(ServicePlan.class, srvcPlanName);
+		entityManager.remove(servicePlan);
+	}
+
+	public ServicePlan findById(String srvcPlanName)
+	{
+		TypedQuery<ServicePlan> query = entityManager.createQuery("SELECT spl FROM ServicePlan AS spl LEFT JOIN FETCH spl.serviceRateSet WHERE spl.srvcPlanName=:splName", ServicePlan.class);
+		query.setParameter("splName", srvcPlanName);
+		return query.getSingleResult();
+	}
+
+	public List<ServicePlan> findAll()
+	{
+		TypedQuery<ServicePlan> query = entityManager.createQuery("select S from ServicePlan S", ServicePlan.class);
+		return query.getResultList();
+	}
+
+	public void saveOrUpdateServiceRate(ServiceRate srvcRate)
+	{
+		if (srvcRate.getSrvcRateId() == null)
+		{
+			entityManager.persist(srvcRate);
+		}
+		else
+		{
+			entityManager.merge(srvcRate);
+		}
+
+	}
+
+	public void deleteServiceRate(ServiceRateId srvcRateId)
+	{
+		if (srvcRateId != null)
+		{
+			ServiceRate srvcRatePlan = entityManager.find(ServiceRate.class, srvcRateId);
+			entityManager.remove(srvcRatePlan);
+		}
+
+	}
+
+	public void deleteServiceRateByCriteria(String srvcPlanName, String srvcCode)
+	{
+		Query query = entityManager.createQuery("DELETE FROM ServiceRate sr WHERE sr.srvcPlan.srvcPlanName=:splName AND sr.service.srvcCode=:srvcCode");
+		query.setParameter("splName", srvcPlanName);
+		query.setParameter("srvcCode", srvcCode);
+		query.executeUpdate();
+	}
+
+	public List<ServiceRate> findAllServiceRateByCriteria(String srvcPlanName, String srvcCode)
+	{
+		TypedQuery<ServiceRate> query = entityManager.
+											createQuery("SELECT sr FROM ServiceRate AS sr WHERE sr.srvcPlan.srvcPlanName=:splName AND sr.service.srvcCode=:srvcCode", ServiceRate.class);
+		query.setParameter("splName", srvcPlanName);
+		query.setParameter("srvcCode", srvcCode);
+		return query.getResultList();
+	}
+
+	public List<ServiceRate> findAllServiceRateByPlanName(String srvcPlanName)
+	{
+		TypedQuery<ServiceRate> query = entityManager.createQuery("SELECT sr FROM ServiceRate AS sr WHERE sr.srvcPlan.srvcPlanName=:splName", ServiceRate.class);
+		query.setParameter("splName", srvcPlanName);
+		return query.getResultList();
+	}
+
+}

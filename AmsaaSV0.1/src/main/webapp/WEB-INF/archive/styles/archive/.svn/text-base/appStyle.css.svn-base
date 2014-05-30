@@ -1,0 +1,84 @@
+@CHARSET "ISO-8859-1";
+
+#header {
+	border: solid;
+	border-color: black;
+	border-width: 1px;
+	min-height: 100px;
+	margin: 1px 1px 1px 1px; //
+	background-color: #0C830B;
+}
+
+#content {
+	border: solid;
+	border-color: black;
+	border-width: 1px;
+	min-height: 480px;
+	margin: 1px 1px 1px 1px;
+}
+
+#footer {
+	border: solid;
+	border-color: black;
+	border-width: 1px;
+	min-height: 34px;
+	margin: 1px 1px 1px 1px;
+	background-color: #9966FF;
+}
+
+body { //
+	font: 70% "Trebuchet MS", sans-serif; //
+	font: 70% "Lucida Console", Monospace;
+	font: 70% "Arial,Helvetica", sans-serif;
+}
+
+#tabs {
+	min-height: 480px;
+}
+
+td>input {
+	width: 100%;
+}
+
+.purpleTable {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #9966FF;
+	border-radius: 5px;
+}
+
+.purpleTable td {
+	background-color: white;
+	text-align: right;
+}
+
+.purpleTable th {
+	background-color: #9966FF;
+	border-radius: 2px;
+}
+
+.sqrTable th {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 0px 10px 0px 10px;
+}
+
+.sqrTable td {
+	text-align: center;
+}
+
+h3 {
+	height: 2px;
+}
+
+input[type="text"] {
+	height: 11px;
+}
+
+input[type="radio"] {
+	-webkit-appearance: checkbox;
+	-moz-appearance: checkbox;
+	-ms-appearance: checkbox; /* not currently supported */
+	-o-appearance: checkbox; /* not currently supported */
+}

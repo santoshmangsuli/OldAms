@@ -1,0 +1,26 @@
+define(function(require) {
+	"use strict";
+	
+	var user = require("../model/userModel");
+	
+	return {
+
+		init:function(){
+			console.log("init USER-CONTROLLER!!");
+		},
+
+		service:function(){
+			this.userList = ko.observableArray([]);
+			
+			this.getUserList = function() {
+				// fetch from repo
+			};
+
+			this.saveUser = function() {
+			};
+
+		}
+
+	};
+
+});

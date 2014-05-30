@@ -1,0 +1,150 @@
+<form method="post" id="billCreateForm">
+	<div id="billCreateAccordian" class="accordian">
+		<div class="accordion-group">
+			<div class="accordion-heading">
+				<a class="accordion-toggle" data-toggle="collapse"
+					data-parent="#billCreateAccordian" href="#billHeader"> BILL
+					HEADER</a>
+			</div>
+			<div id="billHeader" class="accordion-body collapse in">
+				<div class="accordion-inner">
+					<!-- <table id="billDetailTable">
+						<tbody>
+							<tr>
+								<td>Bill
+									Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+								<td><input id="billDate" type="text"
+									data-bind="datepicker:billDate" /></td>
+								<td>Bill Due Date&nbsp;&nbsp;:</td>
+								<td><input id="billDueDate" type="text"
+									data-bind="datepicker:billDueDate" /></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="coloredRow">
+								<th colspan="4">Bill Period</th>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>From Date&nbsp;&nbsp;:</td>
+								<td><input id="billFromDate" type="text"
+									data-bind="datepicker:billPeriodFromDate" /></td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;To Date&nbsp;&nbsp;:</td>
+								<td><input id="billToDate" type="text"
+									data-bind="datepicker:billPeriodToDate" /></td>
+							</tr>
+						</tbody>
+					</table> -->
+				</div>
+			</div>
+		</div>
+		<div class="accordion-group">
+			<div class="accordion-heading">
+				<a class="accordion-toggle" data-toggle="collapse"
+					data-parent="#billCreateAccordian" href="#custDetails">
+					CUSTOMER DETAILS</a>
+			</div>
+			<div id="custDetails" class="accordion-body collapse">
+				<div class="accordion-inner"></div>
+			</div>
+		</div>
+		<div class="accordion-group">
+			<div class="accordion-heading">
+				<a class="accordion-toggle" data-toggle="collapse"
+					data-parent="#billCreateAccordian" href="#billItems">
+					BILL-ITEMS</a>
+			</div>
+			<div id="billItems" class="accordion-body collapse">
+				<div class="accordion-inner">
+					<!-- <select data-bind="options:Bill().prodList,optionsText:function(item){return item.dataModel.srvcCode},optionsCaption:'Select...'"></select>  -->
+					<table class="uiTable uiTable-with-border" width="90%" >
+
+						<thead>
+
+							<tr>
+								<th>Sl#</th>
+								<th>Service Code</th>
+								<th>Service Name</th>
+								<th>Price</th>
+								<th>Quantity</th>
+								<th>Subtotal</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+
+
+						<tbody data-bind='foreach:$root.billLineItems'>
+
+							<tr>
+								<td data-bind="text:$index()+1"></td>
+							
+								<td><select id="SrvcPlanLst"
+									data-bind="options:$root.servicePlanList,optionsText: 'srvcPlanName',optionsCaption:'Select...',value:itemProduct">
+								</select>
+								</td>
+							
+
+								<td data-bind='with: serviceRateItem'><span
+									data-bind='text:srvcCode'></span>
+								</td>
+								<td data-bind='with: serviceRateItem'><span
+									data-bind='text:price'></span>
+								</td>
+								<td><input style="width: 50px;"
+									data-bind='visible: serviceRateItem, value: quantity, valueUpdate: "afterkeydown"' />
+								</td>
+								<td data-bind="text:subTotal"></td>
+								<td>
+									<button data-bind='click:$parent.removeBillItem'>Remove
+										Item</button>
+								</td>
+							</tr>
+						</tbody>
+					 <!-- <tbody class="uiTable-with-border">
+						<tr style="background-color: #C5C9C5; color: black;">
+							<td colspan="5" style="text-align: right;"><strong>TOTAL
+									TAX:</strong></td>
+							<td data-bind="text:billTotalTax"></td>
+							<td></td>
+						</tr>
+						<tr style="background-color: #E8EBE8; color: black;">
+							<td colspan="5" style="text-align: right;"><strong>TOTAL
+									AMOUNT:</strong></td>
+							<td data-bind="text:billTotalAmount"></td>
+							<td></td>
+						</tr>
+					</tbody> --> 
+					</table>
+					<br>
+					<button data-bind='click:$root.addBillItem'>Add Item</button>
+					
+				</div>
+			</div>
+		</div>
+		<div class="accordion-group">
+			<div class="accordion-heading">
+				<a class="accordion-toggle" data-toggle="collapse"
+					data-parent="#billCreateAccordian" href="#billSummary">BILL
+					SUMMARY</a>
+			</div>
+			<div id="billSummary" class="accordion-body collapse">
+				<div class="accordion-inner"></div>
+			</div>
+		</div>
+	</div>
+</form>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="ApartmentManagementSoftware">
+		<class>com.ams.domain.model.service.ServiceSubscription</class>
+		<class>com.ams.domain.model.service.ServiceRateId</class>
+		<class>com.ams.domain.model.service.ServiceRate</class>
+		<class>com.ams.domain.model.service.ServicePlan</class>
+		<class>com.ams.domain.model.service.Service</class>
+		<class>com.ams.domain.model.service.ChargeComponent</class>
+		<class>com.ams.domain.model.person.PersonDetail</class>
+		<class>com.ams.domain.model.person.Person</class>
+		<class>com.ams.domain.model.person.Address</class>
+		<class>com.ams.domain.model.measureandunits.Rate</class>
+		<class>com.ams.domain.model.measureandunits.Quantity</class>
+		<class>com.ams.domain.model.measureandunits.Period</class>
+		<class>com.ams.domain.model.measureandunits.Money</class>
+		<class>com.ams.domain.model.bill.Payment</class>
+		<class>com.ams.domain.model.bill.BillPaymentRegister</class>
+		<class>com.ams.domain.model.bill.BillItem</class>
+		<class>com.ams.domain.model.bill.Bill</class>
+		<class>com.ams.domain.model.account.Transaction</class>
+		<class>com.ams.domain.model.account.AccountDetail</class>
+		<class>com.ams.domain.model.account.Account</class>
+		<shared-cache-mode>ALL</shared-cache-mode>
+		<properties>
+			<property name="eclipselink.ddl-generation" value="drop-and-create-tables" />
+			<property name="eclipselink.ddl-generation.output-mode"
+				value="sql-script" />
+			<property name="eclipselink.application-location" value="C:\Users\Moni\Desktop" />
+		</properties>
+	</persistence-unit>
+</persistence>
